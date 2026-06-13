@@ -30,7 +30,7 @@ mov eax, cr0
 or eax, 1
 mov cr0, eax
 
-; Reload CS using code segment descriptor
+; Reload CS using the new gdt code segment descriptor
 jmp CODE_SEG:init_pm
 
 BOOT_DRIVE db 0
@@ -41,7 +41,7 @@ BOOT_DRIVE db 0
 
 gdt_start:
 
-; Null descriptor (required)
+; Null descriptor (for intel idk why)
 gdt_null:
     dw 0x0000
     dw 0x0000

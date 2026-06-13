@@ -6,7 +6,8 @@ SECTIONS
 
     .text :
     {
-        *(.text*)
+      *kernel_entry.o(.text)
+        *(.text)  
     }
 
     .rodata :
