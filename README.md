@@ -33,6 +33,11 @@ Ensure you have the following packages installed on your Linux system:
 sudo apt install clang lld qemu-system-x86_64 mtools dosfstools
 ```
 
+```sh
+# On Arch:
+yay -S clang lld qemu-desktop mtools dosfstools
+```
+
 ### Building and Running
 
 1. **Clone the repository:**
