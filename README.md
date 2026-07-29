@@ -1,6 +1,12 @@
 # beanEFI
 
-beanEFI is a project i made to learn about the bootloader and how my linux boots up, it uses the edk II header files and ovfm uefi image to run 
+beanEFI is a project i made to learn about the bootloader and how my linux boots up.
+
+The project is written entirely in C and compiled with **Clang** targeting the **PE/COFF** executable format (`BOOTX64.EFI`), which is the executable format required by UEFI firmware.
+
+Instead of using the full EDK II build system, `beanEFI` only uses the **EDK II header files**. These headers provide the UEFI data structures, protocols, GUIDs, and function definitions needed to communicate with the firmware while keeping the build process simple and transparent.
+
+During development, the project runs inside **QEMU** using the **OVMF** (Open Virtual Machine Firmware) UEFI firmware image. OVMF is an open-source implementation of the UEFI specification, allowing the bootloader to be tested without requiring physical hardware.
 
 
 ---
