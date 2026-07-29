@@ -24,7 +24,11 @@ Here is `beanEFI` in action, drawing a custom font rendering "beanie" in a shift
 
 ## Architecture & Specifications
 
-Clang builds a c program using edk2 uefi headers to get functions which the uefi gives and the bios runs the uefi stub
+The build process is kept pretty simple because the goal of this project was to actually understand how UEFI works instead of hiding everything behind a huge build system.
+
+The code is written in C and compiled using **Clang** targeting `x86_64-pc-win32-coff`, which makes the output a **PE32+ (PE/COFF)** executable (`BOOTX64.EFI`). This is the format that 64-bit UEFI firmware expects. The binary is then linked using **LLD**.
+
+When the machine starts, OVMF looks for `EFI/BOOT/BOOTX64.EFI`, loads it into memory, and jumps into the `efi_main()` function. It also gives the program an `EFI_SYSTEM_TABLE`, which contains all the interfaces provided by the firmware.
 
 ---
 
