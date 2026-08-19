@@ -20,9 +20,6 @@ Here is `beanEFI` in action, drawing a custom font rendering "beanie" in a shift
 
 ![beanEFI Scrolling Rainbow Demo](demo.gif)
 
-*Static screenshot:*
-![beanEFI UEFI Framebuffer Screenshot](screenshot.png)
-
 ---
 
 ## Architecture & Specifications
