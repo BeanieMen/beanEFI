@@ -35,7 +35,7 @@ When the machine starts, OVMF looks for `EFI/BOOT/BOOTX64.EFI`, loads it into me
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
