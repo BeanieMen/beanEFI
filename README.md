@@ -1,3 +1,6 @@
+# DISCLAIMER, THIS CANNOT BE HOSTED ON ANYTHING BECAUSE THIS IS AN EFI APPLICATION. PLEASE UNDERSTAND. HERES A DEMO URL https://www.youtube.com/watch?v=-Udu0EeAm7w
+
+
 # beanEFI
 
 beanEFI is a project i made to learn about the bootloader and how my linux boots up.
@@ -62,3 +65,8 @@ yay -S clang lld qemu-desktop mtools dosfstools
    ```
 
 ---
+
+
+
+# disclaimer
+ai was used in the making of this application
